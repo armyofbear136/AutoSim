@@ -34,16 +34,14 @@ sleep 1000
 MouseMove, FoundInvX+10, FoundInvY+65
 sleep 100
 send, {LShift Down}
-sleep 100
+sleep 200
 click
-sleep 100
+sleep 200
 send, {LShift Up}
-sleep 300
+sleep 500
 send, 100     ;AMOUNT TO SPLIT HERE
 sleep 500
-send, {Enter Down}
-sleep 50
-send, {Enter Up}
+send, {Enter}
 sleep 200
 MouseMove, FoundInvX+160, FoundInvY+65
 sleep 100
@@ -56,16 +54,14 @@ sleep 1000
 MouseMove, FoundInvX+60, FoundInvY+65
 sleep 100
 send, {LShift Down}
-sleep 100
+sleep 200
 click
-sleep 100
+sleep 200
 send, {LShift Up}
-sleep 300
+sleep 500
 send, 50     ;AMOUNT TO SPLIT HERE
 sleep 500
-send, {Enter Down}
-sleep 50
-send, {Enter Up}
+send, {Enter}
 sleep 200
 MouseMove, FoundInvX+210, FoundInvY+65
 sleep 100
@@ -78,16 +74,14 @@ sleep 1000
 MouseMove, FoundInvX+110, FoundInvY+65
 sleep 100
 send, {LShift Down}
-sleep 100
+sleep 200
 click
-sleep 100
+sleep 200
 send, {LShift Up}
-sleep 300
+sleep 500
 send, 50     ;AMOUNT TO SPLIT HERE
 sleep 500
-send, {Enter Down}
-sleep 50
-send, {Enter Up}
+send, {Enter}
 sleep 200
 MouseMove, FoundInvX+260, FoundInvY+65
 sleep 200
@@ -153,16 +147,14 @@ sleep 1000
 MouseMove, FoundInvX+10, FoundInvY+65
 sleep 100
 send, {LShift Down}
-sleep 100
+sleep 200
 click
-sleep 100
+sleep 200
 send, {LShift Up}
-sleep 300
+sleep 500
 send, 100     ;AMOUNT TO SPLIT HERE
 sleep 500
-send, {Enter Down}
-sleep 50
-send, {Enter Up}
+send, {Enter}
 sleep 200
 MouseMove, FoundInvX+160, FoundInvY+65
 sleep 100
@@ -175,16 +167,14 @@ sleep 1000
 MouseMove, FoundInvX+60, FoundInvY+65
 sleep 100
 send, {LShift Down}
-sleep 100
+sleep 200
 click
-sleep 100
+sleep 200
 send, {LShift Up}
-sleep 300
+sleep 500
 send, 50     ;AMOUNT TO SPLIT HERE
 sleep 500
-send, {Enter Down}
-sleep 50
-send, {Enter Up}
+send, {Enter}
 sleep 200
 MouseMove, FoundInvX+210, FoundInvY+65
 sleep 100
@@ -197,16 +187,14 @@ sleep 1000
 MouseMove, FoundInvX+110, FoundInvY+65
 sleep 100
 send, {LShift Down}
-sleep 100
+sleep 200
 click
-sleep 100
+sleep 200
 send, {LShift Up}
-sleep 300
+sleep 500
 send, 50     ;AMOUNT TO SPLIT HERE
 sleep 500
-send, {Enter Down}
-sleep 50
-send, {Enter Up}
+send, {Enter}
 sleep 200
 MouseMove, FoundInvX+260, FoundInvY+65
 sleep 200
