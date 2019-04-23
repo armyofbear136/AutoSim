@@ -3,9 +3,13 @@ WinGet, Mortal, List, MortalGame,
 
 SendMode, Input
 {
+MouseMove, 0, 0
 
+ImageSearch, FoundInvX, FoundInvY, 0, 0, 3840, 2160, *60 inventory.png
 
-MouseMove, 1900, 1150
+sleep 100
+
+MouseMove, FoundInvX+160, FoundInvY+65
 
 }
 

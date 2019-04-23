@@ -10,7 +10,7 @@ f1::
 
 ImageSearch, FoundMatX, FoundMatY, 0, 0, 3840, 2160, *60 Mat.png
 
-Loop 7 ; how many catalysts we need
+Loop 10 ; how many catalysts we need
 {
 
 sleep 1000
@@ -22,7 +22,7 @@ click
 sleep 100
 send, {LShift Up}
 sleep 300
-send, 417     ;AMOUNT TO SPLIT HERE
+send, 50     ;AMOUNT TO SPLIT HERE
 sleep 300
 send, {Enter Down}
 sleep 50
