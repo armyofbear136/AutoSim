@@ -40,7 +40,7 @@ sleep 100
 send, {LShift Up}
 sleep 300
 send, 100     ;AMOUNT TO SPLIT HERE
-sleep 300
+sleep 500
 send, {Enter Down}
 sleep 50
 send, {Enter Up}
@@ -62,7 +62,7 @@ sleep 100
 send, {LShift Up}
 sleep 300
 send, 50     ;AMOUNT TO SPLIT HERE
-sleep 300
+sleep 500
 send, {Enter Down}
 sleep 50
 send, {Enter Up}
@@ -84,7 +84,7 @@ sleep 100
 send, {LShift Up}
 sleep 300
 send, 50     ;AMOUNT TO SPLIT HERE
-sleep 300
+sleep 500
 send, {Enter Down}
 sleep 50
 send, {Enter Up}
@@ -159,7 +159,7 @@ sleep 100
 send, {LShift Up}
 sleep 300
 send, 100     ;AMOUNT TO SPLIT HERE
-sleep 300
+sleep 500
 send, {Enter Down}
 sleep 50
 send, {Enter Up}
@@ -181,7 +181,7 @@ sleep 100
 send, {LShift Up}
 sleep 300
 send, 50     ;AMOUNT TO SPLIT HERE
-sleep 300
+sleep 500
 send, {Enter Down}
 sleep 50
 send, {Enter Up}
@@ -203,7 +203,7 @@ sleep 100
 send, {LShift Up}
 sleep 300
 send, 50     ;AMOUNT TO SPLIT HERE
-sleep 300
+sleep 500
 send, {Enter Down}
 sleep 50
 send, {Enter Up}
@@ -299,7 +299,7 @@ sleep 5000
 
 ;now we should have no remaining base materials in slot 1,2,3 so move refined to a chest/bank (bags didnt work)
 
-Send {]}
+Send {]} ;open chest/bank
 sleep 2000
 MouseMove, FoundInvX+160, FoundInvY+115  ;slot below slot 4
 sleep 500
