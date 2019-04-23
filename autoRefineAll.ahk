@@ -90,10 +90,10 @@ sleep 50
 send, {Enter Up}
 sleep 200
 MouseMove, FoundInvX+260, FoundInvY+65
-sleep 100
+sleep 200
 click
 
-sleep 200
+sleep 500
 
 ;start refining
 
@@ -209,10 +209,10 @@ sleep 50
 send, {Enter Up}
 sleep 200
 MouseMove, FoundInvX+260, FoundInvY+65
-sleep 100
+sleep 200
 click
 
-sleep 200
+sleep 500
 
 ;start refining
 
@@ -297,19 +297,17 @@ sleep 500
 Click
 sleep 5000
 
-;now we should have no remaining base materials in slot 1,2,3 so move refined to a bag
+;now we should have no remaining base materials in slot 1,2,3 so move refined to a chest/bank (bags didnt work)
 
-MouseMove, FoundInvX+220, FoundInvY+340 ;slot 34
-sleep 200
-Send {Rbutton}
-sleep 500
+Send {]}
+sleep 2000
 MouseMove, FoundInvX+160, FoundInvY+115  ;slot below slot 4
 sleep 500
 Send {Rbutton}
 sleep 1000
 Send {Escape}
 
-;with our materials bagged, we can move a new set of mats into position
+;with our materials stored away, we can move a new set of mats into position
 
 ImageSearch, FoundPMatX, FoundPMatY, 0, 0, 3840, 2160, *60 MatP.png
 ImageSearch, FoundCMatX, FoundCMatY, 0, 0, 3840, 2160, *60 MatC.png
