@@ -13,7 +13,6 @@ FoundDMatX = 0
 FoundDMatY = 0
 
 
-FoundMat
 
 ;slot 1 MouseMove, FoundInvX+10, FoundInvY+65 
 ;slot 2 MouseMove, FoundInvX+60, FoundInvY+65
