@@ -146,7 +146,7 @@ Send {Lbutton Up}
 sleep 500
 
 
-Loop 99
+Loop 98
 {
 ;splitting primary mat from slot 1 to slot 4
 sleep 1000
@@ -254,6 +254,48 @@ sleep 500
 Click
 sleep 5000
 }
+
+;since mortal doesnt let us split the same amount as in slot, we need to just process the last batch
+
+;start refining
+
+Send {f}
+
+;add primary mat from slot 1
+MouseMove, FoundInvX+10, FoundInvY+65 
+sleep 500
+Send {Lbutton Down}
+sleep 200
+MouseMove, 1840, 1100 ;primary slot in menu
+sleep 200
+Send {Lbutton Up}
+sleep 500
+
+;add secondary from slot 2
+MouseMove, FoundInvX+60, FoundInvY+65
+sleep 500
+Send {Lbutton Down}
+sleep 200
+MouseMove, 1940, 1100 ;secondary slot in menu
+sleep 200
+Send {Lbutton Up}
+sleep 500
+
+;add tertiary from slot 3
+MouseMove, FoundInvX+110, FoundInvY+65
+sleep 500
+Send {Lbutton Down}
+sleep 200
+MouseMove, 2000, 1100 ;tertiary slot in menu
+sleep 200
+Send {Lbutton Up}
+sleep 500
+
+MouseMove, 1900, 1150
+
+sleep 500
+Click
+sleep 5000
 
 ;now we should have no remaining base materials in slot 1,2,3 so move refined to a bag
 
