@@ -26,16 +26,11 @@ maxCata *= %catalyst%
 
 currentstack = 23
 
-value := Mod(currentstack, cataLimit)
+currentstack := currentstack+1
 
 
-if Mod(currentstack, cataLimit){
-MsgBox, yes %value%
-}
-else
-{
-MsgBox, no %value%
-}
+MsgBox, %currentstack%
+
 
 MouseMove, % Floor(10000/420), % Floor(10000/290)
 

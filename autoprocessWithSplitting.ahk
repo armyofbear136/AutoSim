@@ -29,7 +29,6 @@ currentstack = 0
 cataLimit = 10000
 cataLimit /= %catalyst%
 
-;loops until the last stack needs to be proccesed, which we can't split so we need to run a separate operation for that one
 
 Loop %stacks%
 {
@@ -53,7 +52,16 @@ sleep 1000
 ;find and split off our desired catalyst and amount into slot 2
 ;check to see if we're at the bottom of our catalyst stack or last catalyst to process. If we are just move it to the processing position
 
-if Mod(currentstack, cataLimit){
+if (currentstack = stacks){
+MouseMove, FoundCMatX+10, FoundCMatY+10
+sleep 500
+send, {LButton Down}
+sleep 300
+MouseMove, invslotX+50, invslotY
+sleep 300
+send, {LButton Up}
+}
+else if Mod(currentstack, cataLimit){
 MouseMove, FoundCMatX+10, FoundCMatY+10
 sleep 100
 send, {LShift Down}
@@ -70,19 +78,14 @@ MouseMove, invslotX+50, invslotY
 sleep 100
 click
 }
-else if (currentstack = stacks){
-MouseMove, FoundCMatX+10, FoundCMatY+10
-sleep 500
-send, {LButton Down}
-sleep 300
-MouseMove, invslotX+50, invslotY
-}
 else{
 MouseMove, FoundCMatX+10, FoundCMatY+10
 sleep 500
 send, {LButton Down}
 sleep 300
 MouseMove, invslotX+50, invslotY
+sleep 300
+send, {LButton Up}
 }
 
 
@@ -116,6 +119,10 @@ sleep 1000
 MouseMove, acceptX, acceptY
 sleep 500
 Click
+
+sleep 3000
+
+}
 
 return
 
@@ -158,7 +165,7 @@ cataLimit /= %catalyst%
 maxCata = %cataLimit%
 maxCata *= %catalyst%
 
-MsgBox, First, Please reserve the first row of your inventory and place ONLY %totalcatalyst% of your catalyst stacked to %maxCata% (aside from your last stack of catalyst) in your inventory or bank. Put the rest in bags or elsewhere. Now we need to record our coordinates. Open your extraction window and move your mouse over the material slot and press Numpad1 and then similarly for the catalyst slot press Numpad2. We also need the extract button so mouse over that and press Numpad 3. Finally move your mouse to the first slot of your inventory and press Numpad4. When ready, keep your bank window open and locked then look at the extraction tool and press F2 to start, F10 to reset.
+MsgBox, First, Please reserve the first row of your inventory and place ONLY %totalcatalyst% of your catalyst stacked to %maxCata% when possible (aside from your last stack of catalyst) in your inventory or bank. Put the rest in bags or elsewhere. Now we need to record our coordinates. Open your extraction window and move your mouse over the material slot and press Numpad1 and then similarly for the catalyst slot press Numpad2. We also need the extract button so mouse over that and press Numpad 3. Finally move your mouse to the first slot of your inventory and press Numpad4. Close the extraction window and when ready, keep your bank and inventory windows open and locked then look at the extraction tool and press F2 to start, F10 to reset.
 
 return
 
