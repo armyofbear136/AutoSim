@@ -49,9 +49,10 @@ sleep 200
 Send {Lbutton Up}
 sleep 1000
 
-;find and split off our desired catalyst and amount into slot 2
+;if needed find and split off our desired catalyst and amount into slot 2
 ;check to see if we're at the bottom of our catalyst stack or last catalyst to process. If we are just move it to the processing position
-
+if (%catalyst% > 0)
+{
 if (currentstack = stacks){
 MouseMove, FoundCMatX+10, FoundCMatY+10
 sleep 500
@@ -87,7 +88,7 @@ MouseMove, invslotX+50, invslotY
 sleep 300
 send, {LButton Up}
 }
-
+}
 
 
 sleep 1000
@@ -107,6 +108,8 @@ sleep 200
 Send {Lbutton Up}
 sleep 1000
 
+if (%catalyst% > 0)
+{
 MouseMove, invslotX+50, invslotY
 sleep 500
 Send {Lbutton Down}
@@ -115,6 +118,7 @@ MouseMove, catslotX, catslotY
 sleep 200
 Send {Lbutton Up}
 sleep 1000
+}
 
 MouseMove, acceptX, acceptY
 sleep 500
