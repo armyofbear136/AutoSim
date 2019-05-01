@@ -127,7 +127,7 @@ MouseMove, 1900, 1150
 
 sleep 500
 Click
-sleep 5000
+sleep 7000
 
 ;move newly refined materials out of the way
 MouseMove, FoundInvX+160, FoundInvY+65 

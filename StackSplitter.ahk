@@ -6,7 +6,7 @@ FoundMatY = 0
 FoundSpaceX = 0
 FoundSpaceY = 0
 
-f1::
+Numpad1::
 
 ImageSearch, FoundMatX, FoundMatY, 0, 0, 3840, 2160, *60 Mat.png
 
@@ -22,7 +22,7 @@ click
 sleep 100
 send, {LShift Up}
 sleep 300
-send, 50     ;AMOUNT TO SPLIT HERE
+send, 720     ;AMOUNT TO SPLIT HERE
 sleep 300
 send, {Enter Down}
 sleep 50
@@ -40,7 +40,7 @@ click
 return
 
 
-f9::reload
+Numpad2::reload
 
 *f12::
 exitapp
